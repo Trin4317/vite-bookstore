@@ -2,12 +2,13 @@
 // name import called useCatalog and useCart
 import {useCatalog} from '@/stores/catalog.js'
 import {useCart} from '@/stores/cart.js'
-const store = useCatalog()
-const cart = useCart()
+
 </script>
 
 <template>
-  
+  <div class="mt-6">
+    <p v-for="(book, index) in newArrivals" :key="index" v-text="book.title"></p>
+  </div>
 </template>
 
 <script>
