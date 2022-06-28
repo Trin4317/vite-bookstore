@@ -9,6 +9,7 @@ export const useCart = defineStore('cart-store', {
   },
 
   getters: {
+    // from `cart` array, return a `contents` array that combines same books together and increase the quantity
     getContents(state) {
       const {cart} = state;
 
@@ -33,6 +34,7 @@ export const useCart = defineStore('cart-store', {
       return state.cart.length;
     },
 
+    // calculate the total value from `cart` array, not `contents` array
     total(state) {
       const {cart} = state;
 
@@ -45,6 +47,7 @@ export const useCart = defineStore('cart-store', {
   },
 
   actions: {
+    // same book also gets added to `cart`
     addToCart(book) {
       this.cart = this.cart.slice(0);
       this.cart.push(book);
