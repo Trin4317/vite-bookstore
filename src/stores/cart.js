@@ -51,6 +51,15 @@ export const useCart = defineStore('cart-store', {
     addToCart(book) {
       this.cart = this.cart.slice(0);
       this.cart.push(book);
-    }
+    },
+    removeFromCart(book) {
+      let bookId = this.cart.findIndex(added => added.isbn13 === book.isbn13);
+      this.cart.splice(bookId, 1);
+    },
+    removeAllFromCart(book) {
+      while (this.cart.findIndex(added => added.isbn13 === book.isbn13) !== -1) {
+        this.removeFromCart(book);
+      }
+    },
   }
 })

@@ -29,8 +29,8 @@ import {useCart} from '@/stores/cart.js'
                   <p class="text-gray-500">Qty: {{ bookDetail.quantity }}</p>
 
                   <div class="flex">
-                    <button type="button" class=" mr-2 font-medium text-indigo-600 hover:text-indigo-500" v-if="bookDetail.quantity > 1">Remove All</button>
-                    <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+                    <button type="button" @click="removeAllFromCart(bookDetail)" class=" mr-2 font-medium text-indigo-600 hover:text-indigo-500" v-if="bookDetail.quantity > 1">Remove All</button>
+                    <button type="button" @click="removeFromCart(bookDetail)" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
                   </div>
                 </div>
               </div>
@@ -73,6 +73,14 @@ export default {
       count: 'count',
       total: 'total',
     })
+  },
+
+  methods: {
+    // use `removeFromCart` and `removeAllFromCart` actions as methods property with same name
+    ...mapActions(useCart, [
+      'removeFromCart',
+      'removeAllFromCart',
+    ])
   },
 
   mounted() {
