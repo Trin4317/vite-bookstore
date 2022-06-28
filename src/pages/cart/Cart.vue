@@ -40,7 +40,7 @@ import {useCart} from '@/stores/cart.js'
       </div>
     </div>
 
-    <div class="border-t border-gray-200 py-6 px-4 sm:px-6">
+    <div v-if="count" class="border-t border-gray-200 py-6 px-4 sm:px-6">
       <div class="flex justify-between text-base font-medium text-gray-900">
         <p>Subtotal</p>
         <p>${{ total.toFixed(2) }}</p>
@@ -52,6 +52,14 @@ import {useCart} from '@/stores/cart.js'
       <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
         <p>
           or <router-link class="font-medium text-indigo-600 hover:text-indigo-500" to="/">Continue Shopping<span aria-hidden="true"> &rarr;</span></router-link>
+        </p>
+      </div>
+    </div>
+
+    <div v-else class="border-t border-gray-200 py-6 px-4 sm:px-6">
+      <div class="flex justify-center text-center text-sm text-gray-500">
+        <p>
+          You cart is empty! Let <router-link class="font-medium text-indigo-600 hover:text-indigo-500" to="/">add some books</router-link> first
         </p>
       </div>
     </div>
