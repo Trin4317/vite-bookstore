@@ -21,7 +21,7 @@ export const useCatalog = defineStore('catalog-store', {
   actions: {
     async fetchNewArrivals() {
       this.fetching = true;
-      const response = await fetch('/data/new-arrivals.json');
+      const response = await fetch(APP_BASE_URL + 'data/new-arrivals.json');
       try {
         const result = await response.json();
         this.newArrivals = result.books;
