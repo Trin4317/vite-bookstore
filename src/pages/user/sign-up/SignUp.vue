@@ -1,5 +1,6 @@
 <script setup>
 import TopNavbar from '@/components/TopNavbar.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -38,15 +39,16 @@ import TopNavbar from '@/components/TopNavbar.vue';
       </div>
     </form>
   </div>
-</div>
-
+  </div>
+  <Footer />
 </template>
 <style></style>
 
 <script>
 export default {
   components: {
-    TopNavbar
+    TopNavbar,
+    Footer,
   },
 
   computed: {},

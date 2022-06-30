@@ -1,6 +1,7 @@
 <script setup>
 import TopNavbar from '@/components/TopNavbar.vue';
 import {useCart} from '@/stores/cart.js'
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -64,6 +65,7 @@ import {useCart} from '@/stores/cart.js'
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 <style></style>
 
@@ -72,7 +74,8 @@ import { mapState, mapActions } from 'pinia'
 
 export default {
   components: {
-    TopNavbar
+    TopNavbar,
+    Footer,
   },
 
   computed: {
