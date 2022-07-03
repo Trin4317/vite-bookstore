@@ -54,7 +54,7 @@
       "price": 10.00,
       "currency": "$",
       "category": "Historical > Historical Fiction",
-      "isbn13": 1400096898,
+      "isbn13": 9781400096893,
       "description": "A literary sensation and runaway bestseller, this brilliant debut novel presents with seamless authenticity and exquisite lyricism the true confessions of one of Japan's most celebrated geisha."
     },
 
@@ -65,7 +65,7 @@
       "price": 10.90,
       "currency": "$",
       "category": "Fiction",
-      "isbn13": 1400096898,
+      "isbn13": 9780156027328,
       "description": "Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor \"Pi\" Patel, a Tamil boy from Pondicherry, explores issues of spirituality and practicality from an early age. He survives 227 days after a shipwreck while stranded on a boat in the Pacific Ocean with a Bengal tiger named Richard Parker."
     },
 
@@ -76,18 +76,18 @@
       "price": 7.99,
       "currency": "$",
       "category": "Thriller > Mystery Thriller",
-      "isbn13": 1400096898,
+      "isbn13": 9780312330873,
       "description": "First, there were ten—a curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon. Their host, an eccentric millionaire unknown to all of them, is nowhere to be found. All that the guests have in common is a wicked past they're unwilling to reveal—and a secret that will seal their fate. For each has been marked for murder."
     },
 
     {
-      "title": "Gone Girl",
+      "title": "  ",
       "author": "Gillian Flynn",
       "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554086139l/19288043.jpg",
       "price": 15.99,
       "currency": "$",
       "category": "Thriller > Mystery Thriller",
-      "isbn13": 1400096898,
+      "isbn13": 9780753827666,
       "description": "On a warm summer morning in North Carthage, Missouri, it is Nick and Amy Dunne’s fifth wedding anniversary. Presents are being wrapped and reservations are being made when Nick’s clever and beautiful wife disappears from their rented McMansion on the Mississippi River."
     }
   ]
