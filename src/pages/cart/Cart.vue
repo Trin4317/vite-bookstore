@@ -6,7 +6,7 @@ import Footer from '@/components/Footer.vue';
 
 <template>
   <TopNavbar />
-  <div class="container mx-auto flex h-full flex-col bg-white shadow-xl">
+  <div class="container mx-auto flex h-full flex-col bg-white shadow-xl mb-6">
     <div class="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
       <div class="mt-8">
         <div class="flow-root">
