@@ -12,7 +12,7 @@ import {useCart} from '@/stores/cart.js'
   <div class="grid grid-cols-2 mb-2">
     <div class="columns-1" v-for="bookDetail in newArrivals">
       <div class="border flex rounded mb-4 shadow-xl relative mx-2">
-        <div class="p-4 flex flex-col static">
+        <div class="p-4 flex flex-col static max-w-xl">
           <strong class="inline-block mb-2 text-lime-400 text-left">{{ bookDetail.category }}</strong>
           <h3 class="text-amber-700 text-left text-lg">{{ bookDetail.title }}</h3>
           <div class="mb-1 text-purple-400 text-left font-normal">{{ bookDetail.author }}</div>
