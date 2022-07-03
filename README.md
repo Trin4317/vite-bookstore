@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+## Simple BookStore built with Vite and Tailwind CSS
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Demo: https://trin4317.github.io/vite-bookstore/
 
-## Recommended IDE Setup
+How to start:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```
+1. Clone the repo
+2. Install dependencies
+npm install
+3. Start local environment
+npm run dev
+4. Deploy to Github Pages
+npm run deploy
+```
+
+Original source code from [Middlemarch](https://github.com/beatfactor/middlemarch)
